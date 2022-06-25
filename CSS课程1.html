@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>CSS试验网页</title>
+	<!-- 2.页面级引入方式
+	<style type="text/css">
+		
+		<div style="width: 100px;height: 100px;background-color: green;">
+		页面级引入方式
+	</div>
+
+	</style> -->
+	<link rel="stylesheet" type="text/css" href="css课程1.css">
+</head>
+<body>
+	<!-- CSS引入方式
+	1.行间样式引入方式
+	<div style="width: 100px;height: 100px;background-color: red;">
+		行间样式引入方式
+	</div> -->
+	<!-- 
+	3.外部CSS文件引用
+	<div>
+		外部CSS文件引用
+	</div> -->
+
+	<!-- 1.id选择器 -->
+	<div id="id的名字">id选择器</div>
+	<!-- 一个元素只能有一个ID -->
+
+	<!-- 2.class选择器 -->
+	<div class="class的名字">class选择器</div>
+	<!-- class是多对多的关系可以多个元素对应一个class也可以多个class对应一个元素例如<div class='demo demo1'>-->
+
+	<!-- 3.标签选择器 -->
+	<div>标签选择器</div>
+
+	<!-- 4.通配符选择器 -->
+	通配符选择器会使整个文档都会被改变
+
+	<!-- 5.属性选择器 -->
+	<div id="1">属性选择器</div>
+
+	！important>行间样式>id选择器>class选择器和属性选择器同级>标签选择器>通配符选择器
+	<!-- 在属性后面加！important例如div{background-color:red!important;} -->
+<p></p>
+
+CSS权重          权重值    (十六进制)
+！important     infinift
+行间样式         1000
+id               100
+class|属性|伪类   10
+标签|伪元素        1
+通配符             0
+
+	<!-- 6.父子选择器 -->
+	<div class="父">
+		<span class="子">父子选择器</span>
+	</div>
+
+	<div> <!-- 1和2都会改变颜色 -->
+		<em>1</em>
+		<strong>
+			<em>2</em>
+		</strong>
+	</div>
+
+	<!-- 7.直接子元素选择器 -->
+	<span> <!-- 只有1会改变颜色 -->
+		<em>1</em>
+		<strong>
+			<em>2</em>
+		</strong>
+	</span>
+
+	<!-- 8.并列选择器 -->
+	<div class="demo">
+		并列选择器
+	</div>
+
+	<!-- 权重值计算 -->
+	<div class="classdiv" id="iddiv">
+		<p class="classp" id="idp">权重值计算</p>
+	</div>
+
+	<!-- 9.分组选择器 -->
+	<em>分组选择器</em>
+	<strong>分组选择器</strong>
+	<span>分组选择器</span>
+	<!-- 使所选的标签中内容都改变 -->
+<p></p>
+	<!-- CSS属性 -->
+	<span class="属性">举个例子</span>
+<p></p>
+	<!-- 用border做一个三角形 -->
+	<div class="三角形"></div>
+
+	<!-- 文字修改 -->
+	<div class="文字修改">文字对齐方式、单行文本高度</div>
+
+	<!-- 文字划线 -->
+	<del style="background-color: white" class="none">中划线</del>
+	<span class="中划线">中划线</span>
+
+	<a href="www.baidu.com">www.baidu.com</a>
+	<span class="下划线">www.baidu.com</span>
+<p></p>
+	<!-- 伪类选择器 -->
+	<a href="http://www.taobao.com" class="伪类选择器">淘宝</a>
+
+<p></p>
+	1.行级元素 inline （带有文本类属性的元素 文本类元素）
+	feature:内容决定元素所占位置
+			不可以通过CSS改变宽高
+	span strong em a del
+
+	2.块级元素 block
+	feature:独占一行
+			可以通过CSS改变宽高
+	div p ul li ol form address
+
+	3.行级块元素 inlineblock
+	feature:内容决定大小
+			可以改宽高
+	img
+
+	<!-- 凡是带有inline的属性的元素都带有文字特性
+	文字特性是两个文字之间会有空隙 -->
+	<!-- 文本类元素之间如果有空格和回车会在浏览器中显示一个空格	 -->
+
+
+
+
+
+</body>
+</html>

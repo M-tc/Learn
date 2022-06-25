@@ -1,0 +1,185 @@
+.color.red{
+	background-color: red;
+}
+.color.yellow{
+	background-color: yellow;
+}
+.color.blue{
+	background-color: blue;
+}
+.color.green{
+	background-color: green;
+}
+.color.gray{
+	background-color: gray;
+}
+.size1{
+	width: 10px;
+	height: 10px;
+}
+.size2{
+	width: 20px;
+	height: 20px;
+}
+.size3{
+	width: 30px;
+	height: 30px;
+}
+.size4{
+	width: 40px;
+	height: 40px;
+}
+.size5{
+	width: 50px;
+	height: 50px;
+}
+
+/*标签初始化*/
+em{
+	font-style: none；
+}
+a{
+	text-decoration: none;
+	color: black；
+}
+ul{
+	list-style: none;
+	padding:0px;
+	margin:0px;
+}
+/*通配符选择器初始化所有标签*/
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+/*盒子模型*/
+.盒子模型{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	border:10px solid black;
+	padding: 30px;
+	margin: 30px;
+}
+/*padding:30px;默认代表padding:30px 30px 30px 30px;*/
+/*padding有四个方向，四个值代表上右下左，三个值代表上 左右 下，
+两个值代表上下 左右*/
+
+/*定位*/
+.position{
+	position:absolute;
+	left: 200px;
+	top: 500px;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+/*position定位 absolute绝对定位 
+left元素距离浏览器左边多少像素 right同理
+top元素距离浏览器上边多少像素 bottom同理*/
+
+/*层模型*/
+.demo1{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	opacity: 0.5;
+}
+.demo2{
+	width: 200px;
+	height: 200px;
+	background-color: green;
+}
+/*opacity是不透明度*/
+
+/*使元素定位在页面中心
+可以在left和top上设置为50%然后再设置margin-left和margin-top
+上设置为-(值)px，这个值是本身元素的left和top的一半*/
+
+
+/*居中五环*/
+.circle1,.circle2,.circle3,.circle4,.circle5{
+	width: 100px;
+	height: 100px;
+	border: 10px solid black;
+	border-radius: 50%;
+	position: absolute;
+}
+.circle1{
+	border-color: blue;
+	left: 500px;
+	top: 300px;
+}
+.circle2{
+	border-color: black;
+	left: 630px;
+	top: 300px;
+}
+.circle3{
+	border-color: red;
+	left: 760px;
+	top: 300px;
+}
+.circle4{
+	border-color: yellow;
+	left: 565px;
+	top: 360px;
+	z-index: 1;
+}
+.circle5{
+	border-color: green;
+	left: 695px;
+	top: 360px;
+	z-index: 1;
+}
+
+
+/*两栏布局*/
+.right{position: absolute;
+	right: 0;
+	width:100px;
+	height: 100px;
+	background-color:red;
+	opacity: 0.5;
+}
+.left{
+	margin-right:100px;
+	height: 100px;
+	background-color: gray;
+}
+
+/*清除浮动流带来的影响*/
+.wrapper{
+	border:1px solid black;
+}
+.content{
+	float: left;
+	color: white;
+	background-color: black;
+	width: 100px;
+	height: 100px;	
+}
+p{
+	clear: both;
+}
+/*在p标签上添加clear
+clear用于清除浮动流，有三个值left right both 
+表示清除左边 右边 两边*/
+/*clear只能清除块级元素的浮动流*/
+
+/*伪元素*/
+span::before{
+	content:"这是前伪元素";
+}
+span::after{
+	content: "这是后伪元素";
+}
+/*标签 + :: + before/after表示选中伪元素*/
+/*content用于改变伪元素里的内容*/
+
+
+
+
+

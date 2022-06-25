@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+	color: #424242;
+	font-family: arial;
+}
+.nav{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.nav .list-item{
+	float:left;
+	margin: 0 10px;
+	height: 30px;
+	line-height: 30px;
+}
+.nav .list-item a{
+	padding: 0 5px;
+	color: #f40;
+	font-weight: bold;
+	height: 30px;
+	display: inline-block;
+	border-radius: 15px;
+}
+.nav .list-item a:hover{
+	background-color: #f40;
+	color: #fff;
+}
+.nav::after{
+	content: "" ;
+	display: block;
+	clear: both;
+}
+
+/*文本内容溢出容器用省略号显示*/
+/*1.单行文本溢出打点显示*/
+.d{
+	width: 300px;
+	height: 40px;
+	line-height: 20px;
+	border:1px solid black;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+/*white-space: nowrap;表示文本超过不换行*/
+/*overflow: hidden;表示溢出文本隐藏*/
+/*text-overflow: ellipsis;表示溢出文本打点显示*/
+.h{
+	width: 300px;
+	height: 40px;
+	border:1px solid black;
+	overflow: hidden;
+}
+/*多行文本不做打点处理，直接溢出文本隐藏即可*/
+
+/*背景图片*/
+.bj{
+	width: 200px;
+	height: 200px;
+	border:1px solid black;
+	background-image: url(nsz.jpeg);
+	background-size: 100px 100px;
+	background-repeat: repeat;
+	background-position: 100px 100px;
+}
+/*background-image: url(nsz.jpeg);用于放置一个背景图片*/
+/*background-size: 100px 100px;用于设置背景图片大小*/
+/*background-repeat: no-repeat;用于设置图片大小不满一个区域时
+是否重复出现，默认值时repeat(重复)也可以设置为no-repeat*/
+/*background-position: 100px 100px;用于设置图片在区域内什么
+位置出现，值可以设置为(xxpx xxpx)也可以是left top(左上)等
+共有5个值top bottom left right center也可以填百分数*/
+
+/*在有CSS显示图片没有CSS显示文字*/
+.tb{
+	display: inline-block;
+	text-decoration: none;
+	color: #424242;
+	width: 190px;
+	height: 0px;
+	padding-top: 90px;
+	overflow: hidden;
+	background-image: url(http://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png);
+	background-size: 190px 90px;
+
+	/*text-indent: 190px;
+	white-space: nowrap;
+	overflow: hidden;*/
+}
+/*第一种
+	将height设置0px把padding-top设置为原来的height高度，
+	再加上溢出部分隐藏*/
+/*文本只能添加在内容区里，但背景颜色和背景图片可以添加在padding里*/
+/*第二种如下
+	text-indent: 190px;
+	white-space: nowrap;
+	overflow: hidden;
+	这三个代码也可以实现功能，但heigh设置要变成原来的高度*/
+
+
+/*两边留白自适应*/
+.wrapper{
+	height: 30px;
+	background-color: #eee;
+}
+.content{
+	margin: 0 auto;
+	width: 1200px;
+	height: 30px;
+	background-color: gray;
+}
+/*margin:0 auto; auto表示内容区居中自适应两边的大小*/
+/*vertical-align用于调元素的水平线*/
+
+
+
+
+
+

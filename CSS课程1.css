@@ -1,0 +1,144 @@
+/*div{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}*/
+
+/*1.id选择器*/
+#id的名字{
+	background-color: red;
+}
+/*2.class选择器*/
+.class的名字{
+	background-color: green
+}
+/*3.标签选择器*/
+div{
+	background-color: yellow;
+}
+/*4.通配符选择器*/
+*{background-color: gray}
+
+/*5.属性选择器*/
+[id]{background-color: blue;}
+/*选择所有有这个属性的标签*/
+
+/*6.父子选择器*/
+div	span{background-color: white}
+.父 .子{background-color: white}
+div	em{background-color: white}
+/*父子选择器是“父”下面的所有“子”可以是直接和间接的*/
+
+/*7.直接子元素选择器*/
+span > em{background-color: white}
+/*浏览器是自右向左开始选的*/
+
+/*8.并列选择器*/
+div.demo{background-color: white}
+
+/*权重值计算*/
+/*100   +  1*/
+#iddiv p{background-color: white}
+/*10     +  10*/
+.classdiv .classp{background-color: red}
+/*将横行的各个选择器权重值相加,权重值大的优先*/
+
+/*9.分组选择器*/
+em,strong,span{background-color: white}
+/*可以是class也可以是ID等等*/
+
+/*CSS属性*/
+.属性{font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+	font-family: arial；
+	color:#ffffff;
+	background-color: #ffffff
+	border:10px solid black;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	width: 10px;			
+	height：10px;
+}
+/*20px表示20像素，font-size是改变字体大小，
+字体默认为16px，像素改变字体的高度*/
+
+/*font-weight是改变字体粗细，默认值是normal，
+属性值有lighter normal bold bolder和数字100 200 300-900
+(没有单位)*/
+
+/*font-style是改变字体为斜体*/
+
+/*font-family是改变字体，如宋体等等*/
+
+/*color是改变字体颜色，有三种写属性值的方法，
+1.直接写英语单词 2.颜色代码#ff4400颜色代码每两位相同可以缩写
+成f40 3.颜色函数rgb(0-255,0-255,0-255)*/
+
+/*background-color是改编背景颜色*/
+
+/*直接用border要输入三个属性值，分别对应width style color*/
+/*border-style有三个属性值
+solid(实线)dotted(点状虚线)dashed(条状虚线)*/
+
+/*width(宽)height(高)*/
+
+/*border-方向-color可以改变边框某一个方向的颜色，
+如border-left-color:yellow;*/
+
+.三角形{width: 0; height: 0;
+	border:50px solid black;
+	border-left-color: red;
+	border-top-color: green; 
+	border-right-color: blue;
+}
+/*transparant是透明色*/
+
+/*文字对齐方式*/
+.文字修改{height: 50px;
+	border:1px solid black;
+	text-align: center;
+	line-height: 50px
+	text-indent:2em;
+}
+/*text-align是文字对齐方式，有三种属性left、center、right
+默认为left*/
+/*line-height是单行文本高度(行间距)，调整文字行与行之间的空隙*/
+/*让line-height的值=height的值可以使单行文本垂直居中*/
+/*text-indent使首行缩进，值设置为2em可以使文本开头空两格*/
+
+/*文字划线*/
+.中划线{
+	text-decoration: line-through;
+}
+/*line-through使这个元素加上中划线*/
+.none{
+	text-decoration: none;
+}
+/*none使这个元素没有线*/
+.下划线{
+	text-decoration: underline;
+	cursor: pointer;
+}
+/*underline使这个元素加上下划线*/
+/*overline使这个元素加上上划线*/
+/*cursor使鼠标光标移动到元素上时,光标发生改变*/
+/*pointer变成手 help变成问号*/
+
+/*伪类选择器*/
+.伪类选择器:hover{
+	text-decoration: none;
+	font-size: 80px;
+	background-color: #f40;
+	border-radius: 50px;
+	color: white;
+}
+/*hover使鼠标光标移动到元素上时,元素发生变化*/
+/*border-radius使边框变成圆角*/
+
+
+
+
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS试验网页2</title>
+	<link rel="stylesheet" type="text/css" href="CSS课程2.css">
+</head>
+<body>
+
+<!-- 可以先定义再使用（先写CSS再写html） -->
+<div class="color red size1"></div>
+<div class="color yellow size2"></div>
+<div class="color blue size3"></div>
+<div class="color green size4"></div>
+<div class="color gray size5"></div>
+<!-- 先写CSS再写html就可以有多种组合也可以方便以后使用相同的CSS -->
+
+<!-- 标签可以初始化 -->
+<em>斜体标签</em>
+<a href="">a标签</a>
+<ul>
+	<li>1列表标签</li>
+	<li>2列表标签</li>
+	<li>3列表标签</li>
+</ul>
+<!-- 通配符选择器是初始化所有标签最好的选择 -->
+
+盒子模型分为4部分
+1.外边距 margin
+2.盒子壁 border
+3.内边距 padding
+4.盒子内容 width + height
+
+
+<!-- 盒子模型 -->
+<div class="盒子模型">内容区内容区内容区内容区内容区内容区内容区内容区内容区内容区</div>
+<!-- 盒模型套盒模型，要使内盒模型在外盒模型的正中央需要内盒模型的大小完全覆盖外盒模型 -->
+<!-- body有天生的margin是8px -->
+
+
+<!-- 绝对定位absolute -->
+<div class="position">绝对定位用的方块</div>
+
+<!-- 层模型 -->
+<div class="demo1"></div>
+<div class="demo2"></div>
+<!-- absolute绝对定位 是脱离原来位置定位，是一个新的层面与原来层面不同
+相对于最近的有定位属性的父级进行定位，如果没有则相对于文档进行定位 -->
+<!-- relative相对定位 是保留原来位置进行定位，依旧是一个新的层面
+相对于原来的位置进行定位 -->
+<!-- 定位一个元素需要参照物，让一个元素的定位属性（position）加上relative作为参照物，让另一个元素的定位属性加上absolute进行定位 -->
+<!-- fixed广告定位 无论屏幕怎么滑动始终保持元素在某一位置不变化 -->
+
+
+<!-- 居中五环 -->
+<div class="plat">
+	<div class="circle1"></div>
+	<div class="circle2"></div>
+	<div class="circle3"></div>
+	<div class="circle4"></div>
+	<div class="circle5"></div>
+</div>
+
+
+<!-- 两栏布局 -->
+<div class="right"></div>
+<div class="left"></div>
+
+
+<!-- 两个bug -->
+<!-- margin塌陷————父子结构中，父级的左右margin改变是根据浏览器页面改变，子级根据父级进行改变。父级的上下margin和子级的上下margin是结合到一起的，取最大的值 -->
+<!-- bfc——block format context -->
+<!-- 如何触发一个盒子的bfc
+position:absolute
+display:inline-block  
+float:left/right      浮动，使元素按顺序站队，
+overflow:hidden       溢出盒子的部分隐藏展示
+ -->
+<!-- margin合并————设置两个div两个div是独占一行的，上面的div的margin-bottom和下面的div的margin-top区域是共用的，
+ -->
+
+<!-- 浮动元素产生了浮动流 所有产生了浮动流的元素，块级元素看不到他们，产生了bfc的元素和文本类属性的元素以及文本都能看到浮动元素。
+ -->
+<!-- 清除浮动流带来的影响 -->
+<div class="wrapper">
+	<div class="content">1</div>
+	<div class="content">2</div>
+	<div class="content">3</div>
+	<p></p>
+</div>
+<!-- 在最下方的浮动元素下添加一个p标签，或者选中后伪元素添加clear属性，最好用后者 -->
+
+<!-- 伪元素 -->
+<!-- 每个标签天生带有两个伪元素，一个在内容前，一个在内容后。 -->
+<!-- 伪元素是没有HTML的结构但是可以当作普通元素使用 -->
+<span>
+	<!-- 前伪元素 -->
+	伪元素
+	<!-- 后伪元素 -->
+</span>
+<!-- 定位(position)和浮动(float)会使元素成为行级块元素 -->
+<!-- 浮动最早的效果是实现文字环绕图片，之间在img标签上添加float即可 -->
+<!-- 设置了position和float会让标签默认带display:inline-block -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!-- Html Hypertext markup language -->
+<!DOCTYPE html>
+<html lang="zh"> <!-- 告诉浏览器这个网页是关于语言内容 （比如ZH代表中文） 除了en代表英语其余都是拼音缩写 -->
+<head>
+	<meta charset="utf-8">
+	<title>HTML标签试验网页</title>
+</head>
+<body>
+	Html Hypertext matkup language 超文本标记
+	<p>段落标签</p>
+	<h1>标题标签</h1>
+	<strong>字体加粗标签</strong>
+	<em>字体斜体标签</em>
+	<del>字体中间加划线</del>
+	<address>（地址）可以用其他标签代替，没什么用</address>
+	<div>容器标签没什么用，div和div之间独立成段，用于装入其他标签</div>
+	<span>容器标签没什么用，span和span之间成行，用于装入其他标签</span>
+	<div style="color:#f40">在各种标签中都可以加入style的color属性来改变标签中的内容颜色，F40是淘宝红，在容器中设置可以使之间所有的东西都改变颜色</div>
+	&nbsp;<!-- 空格 --> <!-- &开头;结尾 -->
+	小于号(<)在网页中显示用&lt;表示lt表示less than，大于号(>)在网页中显示用&gt;表示gt表示great than
+	<br>代表换行符类似于回车
+	<hr>代表一条水平线
+	<ol type="1" reversed="reversed" start=""><!-- 默认是阿拉伯数字排列也可以用英语(将type改成a)(也可以将type改成i),<ol>和<li>是配套的列表标签,reversed是倒序的时候用的，意思是相反.start代表从第几个开始排序只用阿拉伯数字填内容 -->
+		<li>第一个列表项</li>
+		<li>第二个列表项</li>
+		<li>第三个列表项</li>
+	</ol>
+	<ul type=""><!-- type默认值是disc代表实心圆square代表实心方块circle代表空心圆 -->
+		<li>列表项</li>
+		<li>列表项</li>
+		<li>列表项</li>
+	</ul>
+	<img src="图片的地址" style="图片的格式如：大小" alt="图片占位符" title="图片提示符"><!-- 1.网上的URL 2.本地的绝对路径 3.本地的相对路径 alt=在图片显示不出来时解释图片title=在鼠标移动到图片上时出现字 -->
+	<a href="http://www.baidu.com" target="_blank">www.baidu.com<!-- 浏览器中显示的东西也可以是图片等 --></a><!-- 默认在本网页中打开网页 target=_blank使点击时在新网页中打开网页 -->
+	<!-- a标签可以用于定位 -->例如
+	<div id="demo1">demo1</div> 
+	<a href="#demo1">find demo1</a>
+	<div id="demo2">demo2</div> 
+	<a href="#demo2">find demo2</a>
+	<!-- a标签可以用来打电话 -->
+	<a href="tel:13758817334">给我打电话</a>
+	<!-- a标签可以用来发邮件 -->
+	<a href="mailto:m2425217651@163.com">给我发邮件</a>
+	<!-- a标签用于协议限定符 -->
+	<a href="javascript:while(1){alert('一直点试试')}">协议限定符</a>
+	<!-- form标签可以用来发送数据，发送数据必须有数据名和数据值 -->
+	<form method="get" action=""> <!-- action内的是提交给哪里的地址 -->
+		<p>
+			用户名：<input type="text" name="username"> <!-- name内是数据名可以随便填但必须填，最好与前面相关 -->
+		</p>
+		<p>
+			密码：<input type="password" name="password"> <!-- name内是数据名可以随便填但必须填，最好与前面相关 -->
+		</p>
+		<input type="submit" value="login" name=""> <!-- 这是提交按钮，value内的内容是按钮内的字 -->
+	</form>
+	<!-- form标签可以用来设置选项 -->
+	<form>是与否
+		是<input type="radio" name="选择" value="yes" checked="checked"> <!-- radio是单选，checkbox是多选 -->
+		<!-- name内是数据名，用一个数据名表示这是一个选择题，value内是数据值，表示发送的数据是什么 -->
+		否<input type="radio" name="选择" value="no"> <!-- checked=checked表示默认选中 -->
+		<input type="submit" name="选择">
+	</form>
+	<!-- form标签可以做列表选项 -->
+	<form>选择一个数字
+		<select name="数字">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+		</select>
+		<input type="submit" name="">
+	</form>
+
+<!-- 表格标签 -->
+<table>
+	<tr><!-- 第一行 -->
+		<td></td>
+		<td></td>
+	</tr>
+	<tr><!-- 第二行 -->
+		<td></td>
+		<td></td>
+	</tr>
+</table>
+<!-- tr表示行 -->
+<!-- td表示格子 -->
+
+
+
+</body>
+
+</html>
